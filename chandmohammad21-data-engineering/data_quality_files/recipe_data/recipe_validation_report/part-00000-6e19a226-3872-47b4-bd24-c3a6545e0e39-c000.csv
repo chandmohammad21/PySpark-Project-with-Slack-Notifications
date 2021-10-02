@@ -1,0 +1,12 @@
+File_Name,Test_Case_Id,Test_Case,Test_Result
+RECIPE,RECIPE_TC_0,"CompletenessConstraint(Completeness(name,None))",Success
+RECIPE,RECIPE_TC_1,"CompletenessConstraint(Completeness(cookTime,None))",Success
+RECIPE,RECIPE_TC_2,"CompletenessConstraint(Completeness(prepTime,None))",Success
+RECIPE,RECIPE_TC_3,"CompletenessConstraint(Completeness(ingredients,None))",Success
+RECIPE,RECIPE_TC_4,"CompletenessConstraint(Completeness(image,None))",Success
+RECIPE,RECIPE_TC_5,"CompletenessConstraint(Completeness(url,None))",Success
+RECIPE,RECIPE_TC_6,"UniquenessConstraint(Uniqueness(List(name),None))",Failure
+RECIPE,RECIPE_TC_7,"UniquenessConstraint(Uniqueness(List(ingredients),None))",Failure
+RECIPE,RECIPE_TC_8,"UniquenessConstraint(Uniqueness(List(url),None))",Success
+RECIPE,RECIPE_TC_9,"ComplianceConstraint(Compliance(cookTime is non-negative,COALESCE(CAST(cookTime AS DECIMAL(20,10)), 0.0) >= 0,None))",Success
+RECIPE,RECIPE_TC_10,"ComplianceConstraint(Compliance(prepTime is non-negative,COALESCE(CAST(prepTime AS DECIMAL(20,10)), 0.0) >= 0,None))",Success

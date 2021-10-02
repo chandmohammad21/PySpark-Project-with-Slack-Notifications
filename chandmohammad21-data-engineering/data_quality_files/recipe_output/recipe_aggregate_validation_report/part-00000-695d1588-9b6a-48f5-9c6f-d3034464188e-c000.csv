@@ -1,0 +1,6 @@
+File_Name,Test_Case_Id,Test_Case,Test_Result
+RECIPE_AGGREGATE,RECIPE_AGGREGATE_TC_0,"CompletenessConstraint(Completeness(difficulty,None))",Success
+RECIPE_AGGREGATE,RECIPE_AGGREGATE_TC_1,"CompletenessConstraint(Completeness(avg_total_cooking_time,None))",Success
+RECIPE_AGGREGATE,RECIPE_AGGREGATE_TC_2,"ComplianceConstraint(Compliance(difficulty contained in easy,medium,hard,`difficulty` IS NULL OR `difficulty` IN ('easy','medium','hard'),None))",Success
+RECIPE_AGGREGATE,RECIPE_AGGREGATE_TC_3,"UniquenessConstraint(Uniqueness(List(difficulty),None))",Success
+RECIPE_AGGREGATE,RECIPE_AGGREGATE_TC_4,"ComplianceConstraint(Compliance(avg_total_cooking_time is non-negative,COALESCE(CAST(avg_total_cooking_time AS DECIMAL(20,10)), 0.0) >= 0,None))",Success
